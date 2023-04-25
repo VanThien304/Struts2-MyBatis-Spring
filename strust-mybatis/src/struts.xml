@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+	<constant name="struts.devMode" value="value"/>
+	<constant name="struts.custom.i18n.resources" value="global"/>
+	<package name="stanford" extends="struts-default">
+		<action name="hello" class="com.tpv.action.HelloAction">
+			<result name="success">/Hello.jsp</result>
+		</action>
+		<action name="listbook" class="com.tpv.action.BookAction">
+				<result name="success">/ListBook.jsp</result>
+		</action>
+		<action name="bookDetail" class="com.tpv.action.BookAction" method="detailsBookInformation">
+				<result name="success">/AddBook.jsp</result>
+		</action>
+			<action name="addBook" class="com.tpv.action.BookAction" method="addAndUpdateBook">
+				<result type="redirectAction">listBook</result>
+				<result name="input">/AddBook.jsp</result>
+				<result name="error">/AddBook.jsp</result>
+		</action>
+	</package>
+		
+	
+</struts>	

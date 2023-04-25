@@ -1,0 +1,14 @@
+INDEX VERSION 1.132+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3232271485.index
+4236098519.index
+2460399116.index
+3156100105.index
+233608653.index
+3710796452.index
+1768753475.index
+926549477.index
+4097263981.index
+3949008507.index
+216963174.index
+313780462.index

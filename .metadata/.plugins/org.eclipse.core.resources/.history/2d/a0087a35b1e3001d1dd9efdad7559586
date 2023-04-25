@@ -1,0 +1,30 @@
+package com.tpv.struts;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class RegisterAction extends ActionSupport {
+
+
+	private static final long serialVersionUID = 1L;
+	
+	
+	
+	@Override
+	public String execute() throws Exception {
+		System.out.println("Username is: "+userBean.getUsername());
+		return SUCCESS;
+	}
+
+	private User userBean;
+
+	public User getUserBean() {
+		return userBean;
+	}
+
+	public void setUserBean(User userBean) {
+		this.userBean = userBean;
+	}
+	
+	
+	
+}

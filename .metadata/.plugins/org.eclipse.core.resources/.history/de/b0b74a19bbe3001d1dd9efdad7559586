@@ -1,0 +1,17 @@
+package com.tpv.struts.Dao;
+
+import com.tpv.struts.User;
+
+public class UserDaoImpl implements UserDao {
+    private SqlSessionFactory sqlSessionFactory;
+
+    public UserDaoImpl(SqlSessionFactory sqlSessionFactory) {
+        this.sqlSessionFactory = sqlSessionFactory;
+    }
+
+    public User getUserByUsername(String username) {
+        try (SqlSession session = sqlSessionFactory.openSession()) {
+            return session.selectOne("getUserByUsername", username);
+        }
+    }
+}

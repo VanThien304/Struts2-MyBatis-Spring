@@ -1,0 +1,8 @@
+package com.tpv.struts.config;
+
+
+@Configuration
+@ComponentScan(basePackages = { "vn.viettuts.service" })
+public class AppConfig {
+
+}

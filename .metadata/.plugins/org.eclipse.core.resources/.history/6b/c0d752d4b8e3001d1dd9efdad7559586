@@ -1,0 +1,12 @@
+package com.tpv.struts.Service;
+
+public class UserService {
+	private UserDAO userDAO;
+
+    public User getUserByUsername(String username) {
+        return userDAO.getUserByUsername(username);
+    }
+
+    public void setUserDAO(UserDAO userDAO) {
+        this.userDAO = user
+}

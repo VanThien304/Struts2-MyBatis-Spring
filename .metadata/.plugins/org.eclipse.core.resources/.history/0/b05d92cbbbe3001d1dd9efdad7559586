@@ -1,0 +1,5 @@
+package com.tpv.struts.config;
+
+public class AppConfig {
+
+}

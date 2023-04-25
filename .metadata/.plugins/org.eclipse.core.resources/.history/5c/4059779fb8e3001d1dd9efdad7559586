@@ -1,0 +1,5 @@
+package com.tpv.struts.Dao;
+
+public class UserDao {
+
+}

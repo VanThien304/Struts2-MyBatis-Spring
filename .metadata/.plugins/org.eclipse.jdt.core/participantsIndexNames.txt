@@ -1,0 +1,9 @@
+INDEX VERSION 1.132
+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3153223455.index
+\struts-form-handling\src\main\java
+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\148135568.index
+\struts-login\src\main\java
+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3411926223.index
+\strust-mybatis\src\main\java
+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3577842232.index
+\struts-mybatis-login\src\main\java

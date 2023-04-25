@@ -1,0 +1,36 @@
+package com.tpv.struts;
+
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Result;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+
+@Action("/register")
+@Result(name="success", location="/thankyou.jsp")
+public class RegisterAction extends ActionSupport {
+
+
+	private static final long serialVersionUID = 1L;
+	
+	
+	
+	@Override
+	public String execute() throws Exception {
+		System.out.println("Username is: "+userBean.getUsername());
+		return SUCCESS;
+	}
+
+	private User userBean;
+
+	public User getUserBean() {
+		return userBean;
+	}
+
+	public void setUserBean(User userBean) {
+		this.userBean = userBean;
+	}
+	
+	
+	
+}

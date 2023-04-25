@@ -1,0 +1,5 @@
+package com.tpv.struts.Dao;
+
+public interface UserDao {
+    User getUserByUsername(String username);
+}

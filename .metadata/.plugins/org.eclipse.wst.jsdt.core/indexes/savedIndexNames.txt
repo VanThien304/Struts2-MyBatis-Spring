@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Struts2-MyBatis\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3491440672.index
+950894861.index
+3153223455.index
+303811671.index
+3949008507.index
+2655135876.index
+1372030204.index

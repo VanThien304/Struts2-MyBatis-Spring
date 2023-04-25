@@ -1,0 +1,53 @@
+package com.tpv.struts;
+
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+@Action("/register")
+@Results({
+	@Result(name="success", location="/thankyou.jsp"),
+	@Result(name="error", location="/error.jsp"),
+})
+public class User  extends ActionSupport{
+
+	private static final long serialVersionUID = 1L;
+	private String username;
+	private String password;
+	
+
+	
+	@Override
+	public String execute() throws Exception {
+		System.out.println("Username is: "+username);
+		
+		if(username.equals("admin") && password.equals("admin123"))
+		{
+			return SUCCESS;
+		}else {
+			return ERROR;
+		}
+	}
+	
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "User [username=" + username + ", password=" + password + "]";
+	}
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return username;
+	}
+	
+	
+}

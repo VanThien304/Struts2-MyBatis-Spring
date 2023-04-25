@@ -1,0 +1,5 @@
+package com.tpv.struts.Service;
+
+public class UserServiceImpl {
+
+}

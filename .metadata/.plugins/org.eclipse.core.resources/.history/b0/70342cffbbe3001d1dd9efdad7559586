@@ -1,0 +1,8 @@
+package com.tpv.struts.config;
+
+
+@Configuration
+@ComponentScan(basePackages = { "com.tpv.struts.Service" })
+public class AppConfig {
+
+}
